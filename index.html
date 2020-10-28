@@ -476,18 +476,18 @@
         <button class="button is-link is-light">Cancel</button>
       </div>
     </div>
-
+<!--
     <div id="CovidDataDisplay" style="display: none;">
       <div id="CovidAPIResponse">
         <h1>COVID-19 Information</h1>
         <div id="CountryResponse">
           <div id="CountryChosen"></div>
-          <div id="LastUpdate"></div>
+          <div class="LastUpdate"></div>
           <h1>Confirmed Cases</h1>
           <div id="confirmed"></div>
           <h1>Total Deaths</h1>
           <div id="Deaths"></div>
-          <h1>Total Recoverd</h1>
+          <h1>Total Recovered</h1>
           <div id="Recovered"></div>
           <h1>Rate of Recovery</h1>
           <div id="RecoverRate"></div>
@@ -498,6 +498,48 @@
         <div id="CityResponse"></div>
       </div>
       <div class="GoogleAPIResponse"></div>
+    -->
+
+    <div id="CovidDataDisplay" style="display: none;">
+        <h1>COVID-19 Information</h1>
+        <div id="CountryResponse"></div>
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Confirmed Cases</h5>
+            <p id="confirmed" class="card-text"></p>
+            <p class="card-text"><small class="text-muted Update"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Confirmed Deaths</h5>
+            <p id="Deaths" class="card-text"></p>
+            <p class="card-text"><small class="text-muted Update"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Total Recovered</h5>
+            <p id="Recovered" class="card-text"></p>
+            <p class="card-text"><small class="text-muted Update"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Recovery Rate</h5>
+            <p id="RecoverRate" class="card-text"></p>
+            <p class="card-text"><small class="text-muted Update"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Death Rate</h5>
+            <p id="DeathRate" class="card-text"></p>
+            <p class="card-text"><small class="text-muted Update"></small></p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -515,6 +557,10 @@
       <div class="row">
         <div class="col">
           <h2 class="display-4">Covid Info Map</h2>
+          <ol>
+            <li>First, search your city.</li>
+            <li>Second, seach "Covid Test Centers"</li>
+          </ol>
         </div>
       </div>
       <div class="row mb-2">

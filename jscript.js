@@ -34,7 +34,7 @@ function handleResponse(response) {
   console.log(response);
   
   var CountryResponse = response[0].country;
-  var eCountry = document.getElementById("CountryChosen");
+  var eCountry = document.getElementById("CountryResponse");
   var LocalCases = response[0].confirmed;
   var eConfirmedCases = document.getElementById("confirmed");
   var LocalDeaths = response[0].deaths;
@@ -45,13 +45,16 @@ function handleResponse(response) {
   var eRecRate = document.getElementById("RecoverRate");
   var DeathRate = (LocalDeaths/LocalCases)*100;
   var eDeathRate = document.getElementById("DeathRate");
+  var Update = response[0].lastUpdate;
+  var eUpdateDisplay = document.getElementsByClassName("Update")
   
   eConfirmedCases.textContent = LocalCases;
   eConfirmedDeaths.textContent = LocalDeaths;
   eRecovered.textContent = LocalRecovered;
   eRecRate.textContent = RecoveryRate.toFixed(0)+"%";
   eDeathRate.textContent = DeathRate.toFixed(0)+"%";
-  eCountry.textContent = CountryResponse
+  eCountry.textContent = CountryResponse;
+  eUpdateDisplay.textContent = Update;
   
 
   console.log(response);
