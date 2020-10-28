@@ -1,0 +1,45 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 2em;
+    
+  }
+  
+  
+  h1 {
+    font-style: italic;
+    color: #373fff;
+  }
+  
+  .covid-img{
+    height:80px;
+    border: 2px solid black;
+    width:130px        
+      
+  }
+
+  .second-img {
+    height: 20px; 
+  }
+   
+  
+  .CovidInfo{
+   background-color:#add8e6;
+  }
+  
+  .TestCenter{
+    background-color:#afeeee;
+      
+  }
+  
+  .label{
+    border-bottom:1px solid black;
+    
+  }
+  #map{
+    height:500px;
+  }
+  
+  
+  
