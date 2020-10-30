@@ -6,6 +6,8 @@ $("#ProduceCovid").on("click", () => {
   //TestCenterLocation();
 });
 
+//Comment
+
 function searchCountry(country) {
   $("#CovidInfo").toggle(false);
   $("#TestCenter").toggle(false);
