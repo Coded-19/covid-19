@@ -108,6 +108,8 @@ function createMap() {
     // check if the places has a geometry attribut
     //if not then return 
     // don't want to anything w/that place
+    
+    places.forEach(function(p) {
       if (!p.geometry) return;
     // push a marker to the marker array and 
     //w constructor takes attribute (the map, name, location(position from geometry object))
@@ -125,10 +127,11 @@ function createMap() {
       //else doesn't have viewport then pass location to extend method
       // of our bounds P. geometry location
       else bounds.extend(p.geometry.location);
-      map.fitBounds(bounds);
     });
     // calling the fitbounds method our map object pass in those bounds
-  };
+    map.fitBounds(bounds);
+  });
+}
 
 // JavaScript: the earlier version w/Ajax w/assistance Chad
 /*var map =
@@ -160,5 +163,3 @@ function createMap() {
     });
 }
 */
-
-
