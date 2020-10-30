@@ -125,9 +125,9 @@ function createMap() {
       //else doesn't have viewport then pass location to extend method
       // of our bounds P. geometry location
       else bounds.extend(p.geometry.location);
+      map.fitBounds(bounds);
     });
     // calling the fitbounds method our map object pass in those bounds
-    map.fitBounds(bounds);
   };
 
 // JavaScript: the earlier version w/Ajax w/assistance Chad
@@ -159,5 +159,6 @@ function createMap() {
       console.log(err);
     });
 }
-var map;
 */
+
+
