@@ -8,5 +8,7 @@ Covid 19 application utilizing API's to assist users in finding a near-by testin
 This URL only has a subset of the data but it has no rate limit so
 it is good for testing.
 
+https://coded-19.github.io/covid-19/
+
 
 
